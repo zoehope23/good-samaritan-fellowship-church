@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ministries – Good Samaritan Fellowship, English Church Kodungaiyur Chennai</title>
+  <meta name="description" content="Explore the ministries at Good Samaritan Fellowship – children's ministry, youth, worship, women's fellowship and more at our English Church in Kodungaiyur.">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .ministries-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    .ministry-card {
+      background: var(--white);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+    }
+    .ministry-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-4px); }
+    .mc-header {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+      padding: 32px 24px;
+      text-align: center;
+    }
+    .mc-icon { font-size: 3rem; margin-bottom: 12px; }
+    .mc-header h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; color: var(--gold-light); }
+    .mc-body { padding: 24px; }
+    .mc-body p { font-size: 0.9rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 16px; }
+    .mc-audience {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--gold);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      border-top: 1px solid var(--border);
+      padding-top: 12px;
+    }
+
+    .involve-section { background: var(--navy); }
+    .involve-section h2, .involve-section .eyebrow { color: var(--gold-light); }
+    .involve-section .section-header p { color: rgba(255,255,255,0.7); }
+    .involve-section .divider { background: linear-gradient(90deg, var(--gold), transparent); }
+    .involve-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+    .involve-step {
+      text-align: center;
+      padding: 24px 16px;
+    }
+    .is-number {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      color: var(--navy);
+      font-weight: 800;
+      font-size: 1.3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px;
+    }
+    .involve-step h4 { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; color: var(--white); margin-bottom: 8px; }
+    .involve-step p { font-size: 0.875rem; color: rgba(255,255,255,0.6); line-height: 1.7; }
+
+    @media (max-width: 900px) {
+      .ministries-grid { grid-template-columns: 1fr 1fr; }
+      .involve-steps { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 600px) {
+      .ministries-grid { grid-template-columns: 1fr; }
+      .involve-steps { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div id="site-nav"></div>
+
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <p class="breadcrumb">Home → Ministries</p>
+      <h1>Our Ministries</h1>
+      <p>There is a place for everyone at Good Samaritan Fellowship. Discover how you can grow, serve, and belong.</p>
+    </div>
+  </div>
+
+  <section class="section" style="background:var(--cream)">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="eyebrow">Get Involved</span>
+        <h2>Ministry for Every Season of Life</h2>
+        <div class="divider"></div>
+        <p>From children to seniors, from new believers to seasoned followers — our ministries are designed to help you grow in faith and community.</p>
+      </div>
+      <div class="ministries-grid">
+        <div class="ministry-card">
+          <div class="mc-header">
+            <div class="mc-icon">🧒</div>
+            <h3>Children's Ministry</h3>
+          </div>
+          <div class="mc-body">
+            <p>Our Children's Ministry provides a safe, fun, and faith-filled environment for young ones to learn about Jesus. Through Bible stories, songs, and activities, children are nurtured in their faith from an early age.</p>
+            <div class="mc-audience">For children aged 3–12</div>
+          </div>
+        </div>
+        <div class="ministry-card">
+          <div class="mc-header">
+            <div class="mc-icon">🔥</div>
+            <h3>Youth Ministry</h3>
+          </div>
+          <div class="mc-body">
+            <p>The Youth Ministry is a vibrant community for teenagers and young adults to encounter God, build lasting friendships, and discover their purpose. Events, Bible studies, and worship nights are core to youth life at GSF.</p>
+            <div class="mc-audience">For ages 13–25</div>
+          </div>
+        </div>
+        <div class="ministry-card">
+          <div class="mc-header">
+            <div class="mc-icon">🎵</div>
+            <h3>Worship Ministry</h3>
+          </div>
+          <div class="mc-body">
+            <p>Our worship team leads the congregation into God's presence through music and song. If you have a gift for music, singing, or sound — there's a place for you to serve and grow in the Worship Ministry.</p>
+            <div class="mc-audience">For all ages</div>
+          </div>
+        </div>
+        <div class="ministry-card">
+          <div class="mc-header">
+            <div class="mc-icon">🌸</div>
+            <h3>Women's Fellowship</h3>
+          </div>
+          <div class="mc-body">
+            <p>A space for women to gather, pray, study Scripture, and encourage one another. The Women's Fellowship builds strong sisterhood relationships and helps women grow in faith, confidence, and purpose.</p>
+            <div class="mc-audience">For women of all ages</div>
+          </div>
+        </div>
+        <div class="ministry-card">
+          <div class="mc-header">
+            <div class="mc-icon">💪</div>
+            <h3>Men's Fellowship</h3>
+          </div>
+          <div class="mc-body">
+            <p>Men gather to study the Word, pray together, and build each other up in faith. Our Men's Fellowship helps men become Godly leaders in their homes, workplaces, and communities.</p>
+            <div class="mc-audience">For men of all ages</div>
+          </div>
+        </div>
+        <div class="ministry-card">
+          <div class="mc-header">
+            <div class="mc-icon">🙏</div>
+            <h3>Prayer Ministry</h3>
+          </div>
+          <div class="mc-body">
+            <p>Prayer is foundational at GSF. The Prayer Ministry coordinates intercession, prayer meetings, and individual prayer support. We believe in a God who answers prayer and moves on behalf of His people.</p>
+            <div class="mc-audience">For all members</div>
+          </div>
+        </div>
+        <div class="ministry-card">
+          <div class="mc-header">
+            <div class="mc-icon">🤝</div>
+            <h3>Outreach &amp; Social Ministry</h3>
+          </div>
+          <div class="mc-body">
+            <p>Living out the Good Samaritan calling, we actively serve our surrounding community through outreach programmes, compassion work, and social initiatives — bringing hope to those in need.</p>
+            <div class="mc-audience">For all members</div>
+          </div>
+        </div>
+        <div class="ministry-card">
+          <div class="mc-header">
+            <div class="mc-icon">👴</div>
+            <h3>Seniors' Fellowship</h3>
+          </div>
+          <div class="mc-body">
+            <p>We honour and cherish our senior members. The Seniors' Fellowship provides fellowship, pastoral care, and meaningful engagement for those in the golden years of life.</p>
+            <div class="mc-audience">For seniors 60+</div>
+          </div>
+        </div>
+        <div class="ministry-card">
+          <div class="mc-header">
+            <div class="mc-icon">💍</div>
+            <h3>Marriage &amp; Family Ministry</h3>
+          </div>
+          <div class="mc-body">
+            <p>Strong families build strong churches. Our Marriage and Family Ministry offers counsel, enrichment events, and support for couples and families at every stage of life.</p>
+            <div class="mc-audience">For couples &amp; families</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GET INVOLVED -->
+  <section class="section involve-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="eyebrow">Next Steps</span>
+        <h2>How to Get Involved</h2>
+        <div class="divider"></div>
+        <p style="color:rgba(255,255,255,0.7)">Getting connected with a ministry is simple. Here's how to take your first step.</p>
+      </div>
+      <div class="involve-steps">
+        <div class="involve-step">
+          <div class="is-number">1</div>
+          <h4>Visit Us</h4>
+          <p>Come to a Sunday or Friday service and experience our community firsthand.</p>
+        </div>
+        <div class="involve-step">
+          <div class="is-number">2</div>
+          <h4>Connect</h4>
+          <p>Talk to one of our pastors or ministry leaders about your interests and gifts.</p>
+        </div>
+        <div class="involve-step">
+          <div class="is-number">3</div>
+          <h4>Get Placed</h4>
+          <p>Find the ministry that fits your passion and season of life — and start serving.</p>
+        </div>
+        <div class="involve-step">
+          <div class="is-number">4</div>
+          <h4>Grow</h4>
+          <p>As you serve and build relationships, watch your faith and community deepen.</p>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:40px;">
+        <a href="contact.html" class="btn btn-primary" style="margin-right:16px">Contact Us</a>
+        <a href="https://wa.me/919955828282" target="_blank" class="wa-footer" style="margin-top:0;display:inline-flex">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <script src="shared.js"></script>
+</body>
+</html>
